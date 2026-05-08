@@ -408,6 +408,7 @@ const PROGRAM = [
   */
 ];
 
+const IMG_PATH = "images/";
 const REST_TIME = "90 sec";
 
 const BEEP_SEQUENCE = [
@@ -493,7 +494,7 @@ PROGRAM.forEach((day, di) => {
     card.id = `card-${di}-${ei}`;
 
     const imgHtml = exo.img
-      ? `<img src="${exo.img}" alt="${exo.name}" loading="lazy">`
+      ? `<img src="${IMG_PATH}${exo.img}" alt="${exo.name}" loading="lazy">`
       : `<span class="exo-img-placeholder">🏋️</span>`;
 
     const timerHtml = exo.timer > 0 ? `
